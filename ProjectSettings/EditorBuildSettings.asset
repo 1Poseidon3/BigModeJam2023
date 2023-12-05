@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AltPlat.unity
     guid: bab6769b420481442811bb6bc423179c
+  - enabled: 1
+    path: Assets/Scenes/NormalMusic.unity
+    guid: 6de33c2d440820a4889efd474859b96c
   m_configObjects: {}
