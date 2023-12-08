@@ -10,7 +10,10 @@ public class capsuleMovement : MonoBehaviour
     public float wallCheckDistance = 0.001f;
 
     private float move;
+
     private Rigidbody2D rb;
+
+
 
     void Start()
     {
@@ -45,4 +48,11 @@ public class capsuleMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
+
+
+
+
+    
+    
+
 }
