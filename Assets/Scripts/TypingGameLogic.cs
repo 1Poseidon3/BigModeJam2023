@@ -29,14 +29,14 @@ public class TypingGameLogic : MonoBehaviour
 
     private void OnInputValueChanged(string arg0)
     {
-        if (inputField.text.Equals(label.text))
+        if (string.Equals(inputField.text, label.text, System.StringComparison.OrdinalIgnoreCase))
         {
             LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
             lls.LoadNextLevel();
         }
         for (int i = 0; i < inputField.text.Length; i++)
         {
-            if (!inputField.text.ToCharArray()[i].Equals(label.text.ToCharArray()[i]))
+            if (!char.ToUpper(inputField.text.ToCharArray()[i]).Equals(char.ToUpper(label.text.ToCharArray()[i])))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
