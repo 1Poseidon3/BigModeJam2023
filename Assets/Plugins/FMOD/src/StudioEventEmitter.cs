@@ -299,6 +299,9 @@ namespace FMODUnity
             IsActive = false;
             cachedParams.Clear();
             StopInstance();
+            {}
+
+
         }
 
         private void StopInstance()
@@ -383,5 +386,7 @@ namespace FMODUnity
             }
             return false;
         }
+
+        
     }
 }
