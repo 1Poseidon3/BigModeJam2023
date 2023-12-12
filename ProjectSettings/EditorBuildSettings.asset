@@ -27,9 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/NormalInput2.unity
     guid: 3b0935f61b1fb6a4eb3b6774e7fccfa5
   - enabled: 1
+    path: Assets/Scenes/NormalType2.unity
+    guid: 4550ae845037df74c922edc00d0b6aff
+  - enabled: 1
     path: Assets/Scenes/AltInput.unity
     guid: 10cf2737cef3c1c45b0be698716745d2
   - enabled: 1
     path: Assets/Scenes/AltPlat.unity
     guid: bab6769b420481442811bb6bc423179c
+  - enabled: 1
+    path: Assets/Scenes/AltType.unity
+    guid: 7dae2eaae2014894c97a0556fe712639
   m_configObjects: {}

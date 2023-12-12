@@ -569,8 +569,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcdecff684f4d7646ae2467dde68386e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimumWordLength: 1
-  maximumWordLength: 5
+  minimumWordLength: 5
+  maximumWordLength: 12
   label: {fileID: 978610063}
   inputField: {fileID: 885818165}
   levelLoader: {fileID: 127091948}
