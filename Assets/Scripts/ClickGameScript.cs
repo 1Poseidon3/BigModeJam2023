@@ -16,7 +16,9 @@ public class ClickGameScript : MonoBehaviour
         counter = 0;
         for (int i = 0; i < circleCount; i++)
         {
-            Instantiate(circlePrefab, new Vector3(Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2), Random.Range(-spawnAreaSize.y / 2, spawnAreaSize.y / 2), 0f), Quaternion.identity);
+            GameObject justCreated = Instantiate(circlePrefab, new Vector3(Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2), Random.Range(-spawnAreaSize.y / 2, spawnAreaSize.y / 2), 0f), Quaternion.identity);
+            float newScale = Random.Range(1.0f, 2.0f);
+            justCreated.transform.localScale = new Vector3(newScale, newScale, justCreated.transform.localScale.z);
         }
     }
 
