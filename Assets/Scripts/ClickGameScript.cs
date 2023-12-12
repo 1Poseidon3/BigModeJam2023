@@ -8,11 +8,16 @@ public class ClickGameScript : MonoBehaviour
     private int counter;
 
     public int circleCount = 4;
-    public GameObject levelLoader;
+    public Vector2 spawnAreaSize = new(15f, 10f);
+    public GameObject circlePrefab, levelLoader;
 
     private void Start()
     {
         counter = 0;
+        for (int i = 0; i < circleCount; i++)
+        {
+            Instantiate(circlePrefab, new Vector3(Random.Range(-spawnAreaSize.x / 2, spawnAreaSize.x / 2), Random.Range(-spawnAreaSize.y / 2, spawnAreaSize.y / 2), 0f), Quaternion.identity);
+        }
     }
 
     private void Update()
