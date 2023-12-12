@@ -18,7 +18,9 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartClick()
     {
+
         LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
         lls.LoadNextLevel();
     }
+
 }
