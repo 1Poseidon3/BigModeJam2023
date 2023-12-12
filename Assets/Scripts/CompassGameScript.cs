@@ -62,7 +62,6 @@ public class CompassGameScript : MonoBehaviour
                 lls.LoadNextLevel();
             }
         }
-        Debug.Log(timer.ToString());
     }
 
     private bool CheckWinCon(int rot, Directions dir)
