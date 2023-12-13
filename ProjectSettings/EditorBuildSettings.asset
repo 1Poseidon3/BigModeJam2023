@@ -45,6 +45,4 @@ EditorBuildSettings:
     path: Assets/Scenes/AltType.unity
     guid: 7dae2eaae2014894c97a0556fe712639
   - enabled: 0
-    path: Assets/Scenes/AltPlat.unity
-    guid: bab6769b420481442811bb6bc423179c
   m_configObjects: {}
