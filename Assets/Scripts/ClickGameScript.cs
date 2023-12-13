@@ -35,10 +35,12 @@ public class ClickGameScript : MonoBehaviour
             Collider2D collider = Physics2D.OverlapPoint(mousePosition);
             if (collider != null && collider.CompareTag("Circle"))
             {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Click");
                 Debug.Log("Circle clicked");
                 collider.gameObject.SetActive(false);
                 counter++;
             }
+
         }
     }
 }

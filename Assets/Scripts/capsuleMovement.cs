@@ -46,6 +46,8 @@ public class capsuleMovement : MonoBehaviour
         if (collision.transform.tag == "Lava")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Death");
         }
     }
 
