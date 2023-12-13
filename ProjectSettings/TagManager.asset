@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Lava
   - Wall
+  - Circle
+  - Arrow
   layers:
   - Default
   - TransparentFX
