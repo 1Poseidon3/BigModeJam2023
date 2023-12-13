@@ -18,21 +18,27 @@ EditorBuildSettings:
     path: Assets/Scenes/NormalType.unity
     guid: af6d16e64eacee649b0a53cf9e3db592
   - enabled: 1
-    path: Assets/Scenes/NormalMusic.unity
-    guid: 6de33c2d440820a4889efd474859b96c
+    path: Assets/Scenes/NormalCompass.unity
+    guid: d52a111d8c1fa2f4a8c2e7b767036c5a
   - enabled: 1
     path: Assets/Scenes/NormalPlat2.unity
     guid: 4e8179eed447ef642a518a9d342183f9
-  - enabled: 1
-    path: Assets/Scenes/NormalInput2.unity
-    guid: 3b0935f61b1fb6a4eb3b6774e7fccfa5
+  - enabled: 0
+    path: Assets/Scenes/NormalMusic.unity
+    guid: 6de33c2d440820a4889efd474859b96c
   - enabled: 1
     path: Assets/Scenes/NormalType2.unity
     guid: 4550ae845037df74c922edc00d0b6aff
   - enabled: 1
+    path: Assets/Scenes/NormalInput2.unity
+    guid: 3b0935f61b1fb6a4eb3b6774e7fccfa5
+  - enabled: 1
     path: Assets/Scenes/AltInput.unity
     guid: 10cf2737cef3c1c45b0be698716745d2
   - enabled: 1
+    path: Assets/Scenes/Alt Plat.unity
+    guid: a4fa193754891ae4cb859b49f658427a
+  - enabled: 0
     path: Assets/Scenes/AltPlat.unity
     guid: bab6769b420481442811bb6bc423179c
   - enabled: 1
