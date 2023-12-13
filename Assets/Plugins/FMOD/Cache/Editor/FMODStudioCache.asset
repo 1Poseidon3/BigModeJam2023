@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8758224833735369343
+--- !u!114 &-8592324337278595334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MiniGame_Success
+  m_Name: event:/MiniGame_Music_160BPM
   m_EditorClassIdentifier: 
-  Path: event:/MiniGame_Success
+  Path: event:/MiniGame_Music_160BPM
   Guid:
-    Data1: 98599465
-    Data2: 1182206405
-    Data3: -2011999346
-    Data4: -1664676245
+    Data1: 215680343
+    Data2: 1119568227
+    Data3: -1822493274
+    Data4: 1582908522
   Banks:
   - {fileID: -5216281237176928461}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 19200
+  Length: 168000
 --- !u!114 &-8269804175155006792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638380846224743348
+  lastModified: 638381079644146617
   FileSizes: []
   Exists: 1
 --- !u!114 &-5190190853920030476
@@ -217,7 +217,6 @@ MonoBehaviour:
   - {fileID: -5216281237176928461}
   EditorEvents:
   - {fileID: -8269804175155006792}
-  - {fileID: -8758224833735369343}
   - {fileID: 5385419058952540723}
   - {fileID: -3634191539884434195}
   - {fileID: 3151373808901213619}
@@ -225,12 +224,14 @@ MonoBehaviour:
   - {fileID: -4010271409716870803}
   - {fileID: -5190190853920030476}
   - {fileID: 4800312642233876534}
+  - {fileID: -8592324337278595334}
+  - {fileID: 8688907132312614895}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5216281237176928461}
   StringsBanks:
   - {fileID: 5617706128196114280}
-  cacheTime: 638380846224768324
+  cacheTime: 638381079644201738
   cacheVersion: 131609
 --- !u!114 &604557544901557639
 MonoBehaviour:
@@ -312,7 +313,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 173
+  Length: 132
 --- !u!114 &5385419058952540723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,10 +356,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638380846224768324
+  lastModified: 638381079644201738
   FileSizes:
   - Name: 
-    Value: 1124
+    Value: 1250
   Exists: 1
 --- !u!114 &6284003224896283988
 MonoBehaviour:
@@ -378,3 +379,30 @@ MonoBehaviour:
   lastModified: 638367978985404134
   FileSizes: []
   Exists: 1
+--- !u!114 &8688907132312614895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MiniGame_Music_170BPM
+  m_EditorClassIdentifier: 
+  Path: event:/MiniGame_Music_170BPM
+  Guid:
+    Data1: -1281059850
+    Data2: 1126832537
+    Data3: 1088652730
+    Data4: -1577093325
+  Banks:
+  - {fileID: -5216281237176928461}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135529
