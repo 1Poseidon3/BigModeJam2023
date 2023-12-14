@@ -33,16 +33,27 @@ EditorBuildSettings:
     path: Assets/Scenes/NormalType2.unity
     guid: 4550ae845037df74c922edc00d0b6aff
   - enabled: 1
+    path: Assets/Scenes/NormalClick2.unity
+    guid: 9e15bcf3152b1b942b40272c66939742
+  - enabled: 1
+    path: Assets/Scenes/NormalCompass2.unity
+    guid: d61277cc1af74f34596bab417025e5a4
+  - enabled: 1
     path: Assets/Scenes/NormalInput2.unity
     guid: 3b0935f61b1fb6a4eb3b6774e7fccfa5
   - enabled: 1
     path: Assets/Scenes/AltInput.unity
     guid: 10cf2737cef3c1c45b0be698716745d2
   - enabled: 1
+    path: Assets/Scenes/AltCompass.unity
+    guid: f90b6661b4ce6d147af84a5ce6d99be7
+  - enabled: 1
     path: Assets/Scenes/Alt Plat.unity
     guid: a4fa193754891ae4cb859b49f658427a
   - enabled: 1
     path: Assets/Scenes/AltType.unity
     guid: 7dae2eaae2014894c97a0556fe712639
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/AltClick.unity
+    guid: 6577df919d5f9ea4fa788cacefce87c2
   m_configObjects: {}
