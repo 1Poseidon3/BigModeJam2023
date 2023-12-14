@@ -7,6 +7,12 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public GameObject levelLoader;
+
+    private void Start()
+    {
+        PlayerPrefs.SetFloat("Timer", 0.00f);
+    }
+
     public void OnQuitClick()
     {
 #if UNITY_EDITOR
