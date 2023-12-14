@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class capsuleMovement : MonoBehaviour
+
 {
     public float speed = 2f;
     public float jump = 200f;

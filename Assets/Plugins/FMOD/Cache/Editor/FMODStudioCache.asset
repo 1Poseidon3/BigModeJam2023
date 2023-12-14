@@ -143,7 +143,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381834513407676
+  lastModified: 638381878548212645
   FileSizes: []
   Exists: 1
 --- !u!114 &-2367666568125111702
@@ -200,12 +200,13 @@ MonoBehaviour:
   - {fileID: 4587286305606388617}
   - {fileID: -2367666568125111702}
   - {fileID: -5776020478729949929}
+  - {fileID: 5020439429223184446}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5216281237176928461}
   StringsBanks:
   - {fileID: 5617706128196114280}
-  cacheTime: 638381834513442643
+  cacheTime: 638381878548267573
   cacheVersion: 131609
 --- !u!114 &604557544901557639
 MonoBehaviour:
@@ -287,7 +288,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4000
+  Length: 3500
 --- !u!114 &4587286305606388617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,6 +316,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 171
+--- !u!114 &5020439429223184446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MiniGame_Running
+  m_EditorClassIdentifier: 
+  Path: event:/MiniGame_Running
+  Guid:
+    Data1: -1701011849
+    Data2: 1228659020
+    Data3: 1996888974
+    Data4: 1897430161
+  Banks:
+  - {fileID: -5216281237176928461}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 437
 --- !u!114 &5617706128196114280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,10 +358,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381834513442643
+  lastModified: 638381878548267573
   FileSizes:
   - Name: 
-    Value: 1286
+    Value: 1324
   Exists: 1
 --- !u!114 &6284003224896283988
 MonoBehaviour:
