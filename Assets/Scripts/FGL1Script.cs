@@ -21,9 +21,7 @@ public class FGL1Script : MonoBehaviour
     private readonly KeyCode[] allowedInputKeys = { KeyCode.S, KeyCode.D, KeyCode.DownArrow, KeyCode.RightArrow };
 
     private void Start()
-    {
-        
-    }
+    {}
 
     void Update()
     {

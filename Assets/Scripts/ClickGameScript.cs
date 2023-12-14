@@ -20,11 +20,14 @@ public class ClickGameScript : MonoBehaviour
             float newScale = Random.Range(1.0f, 2.0f);
             justCreated.transform.localScale = new Vector3(newScale, newScale, justCreated.transform.localScale.z);
         }
+        
+         
     }
 
     private void Update()
     {
         if (counter >= circleCount)
+        
         {
             LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
             lls.LoadNextLevel();
@@ -42,5 +45,7 @@ public class ClickGameScript : MonoBehaviour
             }
 
         }
+        
     }
+    
 }
