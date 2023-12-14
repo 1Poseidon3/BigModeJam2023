@@ -6,18 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class TypingGameLogic : MonoBehaviour
 {
-    //string[] words = File.ReadAllLines("Assets/Scripts/words_alpha.txt").SelectMany(word => word.Split(' ', System.StringSplitOptions.RemoveEmptyEntries)).ToArray();
     string[] words;
 
-    [SerializeField]
-    int minimumWordLength = 1;
-    [SerializeField]
-    int maximumWordLength = 50;
-    [SerializeField]
-    TextMeshProUGUI label;
-    [SerializeField]
-    TMP_InputField inputField;
-
+    public int minimumWordLength = 1, maximumWordLength = 50;
+    public bool alt = false;
+    public TextMeshProUGUI label;
+    public TMP_InputField inputField;
     public GameObject levelLoader;
 
     void Start()
@@ -29,17 +23,31 @@ public class TypingGameLogic : MonoBehaviour
 
     private void OnInputValueChanged(string arg0)
     {
-        if (string.Equals(inputField.text, label.text, System.StringComparison.OrdinalIgnoreCase))
+        FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Type");
+        if (!alt)
         {
-            LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
-            lls.LoadNextLevel();
-        }
-        for (int i = 0; i < inputField.text.Length; i++)
-        {
-            if (!char.ToUpper(inputField.text.ToCharArray()[i]).Equals(char.ToUpper(label.text.ToCharArray()[i])))
+            if (string.Equals(inputField.text, label.text, System.StringComparison.OrdinalIgnoreCase))
             {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Type");
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
+                lls.LoadNextLevel();
+            }
+            for (int i = 0; i < inputField.text.Length; i++)
+            {
+                if (!char.ToUpper(inputField.text.ToCharArray()[i]).Equals(char.ToUpper(label.text.ToCharArray()[i])))
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+        else
+        {
+            if (string.Equals(inputField.text, new string(label.text.Reverse().ToArray()), System.StringComparison.OrdinalIgnoreCase))
+            {
+                LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
+                lls.LoadNextLevel();
+            }
+            for (int i = 0; i < inputField.text.Length; i++)
+            {
+                if (!char.ToUpper(inputField.text.ToCharArray()[i]).Equals(char.ToUpper(label.text.ToCharArray()[label.text.Length - 1 - i])))
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
     }

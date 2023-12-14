@@ -214,6 +214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleCount: 16
+  pulseSpeed: 2
+  pulseMagnitude: 0.75
+  alt: 1
   spawnAreaSize: {x: 15, y: 10}
   circlePrefab: {fileID: 5470238026369695747, guid: 1ea50194947ea0d4381e17ac79a6394f, type: 3}
   levelLoader: {fileID: 496528015}

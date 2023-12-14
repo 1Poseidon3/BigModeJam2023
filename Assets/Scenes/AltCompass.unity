@@ -838,6 +838,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 5
+  stageTwo: 1
+  alt: 1
+  newDirectionChosen: 0
   startLabel: {fileID: 1595956950}
   levelLoader: {fileID: 889813656}
 --- !u!4 &1158894134
@@ -1212,7 +1215,7 @@ GameObject:
   - component: {fileID: 1595956949}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: Starting Text
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,6 +9,7 @@ TagManager:
   - Circle
   - Arrow
   - Ground
+  - Starting Text
   layers:
   - Default
   - TransparentFX
