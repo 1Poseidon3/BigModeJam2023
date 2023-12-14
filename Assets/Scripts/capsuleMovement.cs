@@ -9,21 +9,29 @@ public class capsuleMovement : MonoBehaviour
     public float jump = 200f;
     public float wallCheckDistance = 0.001f;
 
-    private float move;
+    private bool canJump = true;
 
     private Rigidbody2D rb;
-
-
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         Move();
         Jump();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            spriteRenderer.flipX = true;
+        }
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     void Move()
@@ -35,9 +43,10 @@ public class capsuleMovement : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && canJump)
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
+            canJump = false;
         }
     }
 
@@ -49,6 +58,11 @@ public class capsuleMovement : MonoBehaviour
 
             FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Death");
         }
+        else if (collision.transform.tag == "Ground")
+        {
+            canJump = true;
+        }
+
     }
 
 
