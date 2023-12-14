@@ -47,6 +47,7 @@ public class capsuleMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             canJump = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Jump");
         }
     }
 
