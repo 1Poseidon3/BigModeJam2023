@@ -18,7 +18,11 @@ public class MainMenu : MonoBehaviour
 
     public void OnStartClick()
     {
+
         LevelLoader lls = levelLoader.GetComponent<LevelLoader>();
         lls.LoadNextLevel();
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Menu_UI_Click");
     }
+
 }

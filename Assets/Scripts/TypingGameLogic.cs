@@ -38,6 +38,7 @@ public class TypingGameLogic : MonoBehaviour
         {
             if (!char.ToUpper(inputField.text.ToCharArray()[i]).Equals(char.ToUpper(label.text.ToCharArray()[i])))
             {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Type");
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }

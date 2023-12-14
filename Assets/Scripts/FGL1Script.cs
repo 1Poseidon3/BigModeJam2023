@@ -19,13 +19,9 @@ public class FGL1Script : MonoBehaviour
 
     private InputState current = InputState.None;
     private readonly KeyCode[] allowedInputKeys = { KeyCode.S, KeyCode.D, KeyCode.DownArrow, KeyCode.RightArrow };
-
-    private void Start()
-    {
-        
-    }
-
-    void Update()
+    private void start()
+    {}
+        void Update()
     {
         switch (current)
         {

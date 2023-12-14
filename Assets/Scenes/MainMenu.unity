@@ -426,8 +426,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+  - component: {fileID: 391276082}
   - component: {fileID: 391276083}
   - component: {fileID: 391276084}
+  - component: {fileID: 391276081}
   m_Layer: 0
   m_Name: MainMenuScript
   m_TagString: Untagged

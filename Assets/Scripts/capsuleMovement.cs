@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class capsuleMovement : MonoBehaviour
+
 {
     public float speed = 2f;
     public float jump = 200f;
@@ -47,6 +48,7 @@ public class capsuleMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
             canJump = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Jump");
         }
     }
 
@@ -55,6 +57,8 @@ public class capsuleMovement : MonoBehaviour
         if (collision.transform.tag == "Lava")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/MiniGame_Death");
         }
         else if (collision.transform.tag == "Ground")
         {
