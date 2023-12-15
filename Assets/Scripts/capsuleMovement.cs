@@ -1,19 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class capsuleMovement : MonoBehaviour
-
 {
+    private bool canJump = true;
+    private Rigidbody2D rb;
+    private SpriteRenderer spriteRenderer;
+
     public float speed = 2f;
     public float jump = 200f;
     public float wallCheckDistance = 0.001f;
-
-    private bool canJump = true;
-
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRenderer;
 
     void Start()
     {

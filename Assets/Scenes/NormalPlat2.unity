@@ -750,6 +750,10 @@ PrefabInstance:
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5756687811191842175, guid: 094188c9182c5694fa1b685db3445db1, type: 3}
+      propertyPath: m_margin.z
+      value: -1557.718
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -839,13 +843,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelFinishTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 1095473190524872179, guid: 09bb4b8b9fc32d24d8fa5c472e0d525e, type: 3}
+      propertyPath: m_TagString
+      value: Level End Trigger
+      objectReference: {fileID: 0}
     - target: {fileID: 3497337171803129299, guid: 09bb4b8b9fc32d24d8fa5c472e0d525e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.45
       objectReference: {fileID: 0}
     - target: {fileID: 3497337171803129299, guid: 09bb4b8b9fc32d24d8fa5c472e0d525e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7639766
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 3497337171803129299, guid: 09bb4b8b9fc32d24d8fa5c472e0d525e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1086,7 +1094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5795633482963398768, guid: 2121b416c9ef2bf44aa5ddeae5c17921, type: 3}
       propertyPath: m_Alpha
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5795633482963398768, guid: 2121b416c9ef2bf44aa5ddeae5c17921, type: 3}
+      propertyPath: m_Interactable
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1626,6 +1638,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 278906614217694739, guid: 1101cdb1cddcac44ca2f25df1580691a, type: 3}
+      propertyPath: levelLoader
+      value: 
+      objectReference: {fileID: 1600643251}
     - target: {fileID: 1277475874853011201, guid: 1101cdb1cddcac44ca2f25df1580691a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.18

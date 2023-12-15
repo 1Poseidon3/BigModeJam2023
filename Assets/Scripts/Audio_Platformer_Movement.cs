@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Audio_Platformer_Movement : MonoBehaviour
 {
   private FMOD.Studio.EventInstance instance;
-  
-  void Update() 
+
+    void Start()
+    {
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+    }
+    void Update() 
 {
     if (Input.GetKeyDown(KeyCode.A)) 
     {
@@ -30,6 +35,11 @@ public class Audio_Platformer_Movement : MonoBehaviour
       instance.release();
     }
   }
-
   
+  void OnSceneUnloaded(Scene scene)
+  {
+    instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    instance.release();
+    SceneManager.sceneUnloaded -= OnSceneUnloaded;
+  }
 }

@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class FGL1Script : MonoBehaviour
@@ -14,14 +9,11 @@ public class FGL1Script : MonoBehaviour
         Combo,
         FirstUp
     }
+    private InputState current = InputState.None;
 
     public GameObject levelLoader;
 
-    private InputState current = InputState.None;
-    private readonly KeyCode[] allowedInputKeys = { KeyCode.S, KeyCode.D, KeyCode.DownArrow, KeyCode.RightArrow };
-    private void start()
-    {}
-        void Update()
+    void Update()
     {
         switch (current)
         {
