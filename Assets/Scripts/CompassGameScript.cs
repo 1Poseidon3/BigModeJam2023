@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -10,7 +8,6 @@ public class CompassGameScript : MonoBehaviour
     private GameObject arrow;
     private Vector3 mousePos, dir;
     private Directions direction;
-
     private enum Directions
     {
         N,

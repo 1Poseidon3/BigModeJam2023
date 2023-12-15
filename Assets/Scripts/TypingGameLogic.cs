@@ -1,4 +1,3 @@
-using System.IO;
 using System.Linq;
 using UnityEngine;
 using TMPro;
@@ -6,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TypingGameLogic : MonoBehaviour
 {
-    string[] words;
+    private string[] words;
 
     public int minimumWordLength = 1, maximumWordLength = 50;
     public bool alt = false;
