@@ -180,6 +180,54 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2121b416c9ef2bf44aa5ddeae5c17921, type: 3}
+--- !u!1 &731579227
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731579229}
+  - component: {fileID: 731579228}
+  m_Layer: 0
+  m_Name: MUSIC_Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731579228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731579227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Parameter: Progress
+  TriggerEvent: 1
+  Value: 3
+--- !u!4 &731579229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731579227}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5792916, y: -0.44660842, z: -0.036223203}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &823334296
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +342,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 767442932}
+  m_Father: {fileID: 1997332844}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -428,6 +476,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerLabel: {fileID: 1338088713}
+  ratingLabel: {fileID: 0}
+  transition: {fileID: 0}
+  timeToTransitionToMainMenu: 15
 --- !u!4 &834676274
 Transform:
   m_ObjectHideFlags: 0
@@ -1091,6 +1142,11 @@ PrefabInstance:
       addedObject: {fileID: 827359929}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 094188c9182c5694fa1b685db3445db1, type: 3}
+--- !u!224 &1997332844 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3475733335762521914, guid: 094188c9182c5694fa1b685db3445db1, type: 3}
+  m_PrefabInstance: {fileID: 1997332843}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1100,3 +1156,6 @@ SceneRoots:
   - {fileID: 1313491902}
   - {fileID: 823334298}
   - {fileID: 423113775}
+  - {fileID: 1997332843}
+  - {fileID: 834676274}
+  - {fileID: 731579229}
