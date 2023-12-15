@@ -17,11 +17,10 @@ public class FGL2Script : MonoBehaviour
         ThirdDown,
         ThirdUp
     }
+    private InputState current = InputState.None;
 
     public GameObject levelLoader;
 
-    private InputState current = InputState.None;
-    private readonly KeyCode[] allowedInputKeys = { KeyCode.S, KeyCode.D, KeyCode.DownArrow, KeyCode.RightArrow };
     void Update()
     {
         switch (current)

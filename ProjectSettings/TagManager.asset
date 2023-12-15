@@ -10,6 +10,7 @@ TagManager:
   - Arrow
   - Ground
   - Starting Text
+  - Level End Trigger
   layers:
   - Default
   - TransparentFX
