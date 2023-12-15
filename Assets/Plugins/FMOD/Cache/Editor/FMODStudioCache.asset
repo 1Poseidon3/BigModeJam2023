@@ -101,33 +101,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 106793
---- !u!114 &-7134581343749057082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/VO_04
-  m_EditorClassIdentifier: 
-  Path: event:/VO_04
-  Guid:
-    Data1: -2105266985
-    Data2: 1121601457
-    Data3: 1247915159
-    Data4: -559744580
-  Banks:
-  - {fileID: -5216281237176928461}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3107
 --- !u!114 &-5801201233232090784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,10 +115,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VO_03
   Guid:
-    Data1: 79342663
-    Data2: 1121965548
-    Data3: 1706581665
-    Data4: 1746070930
+    Data1: -2105266985
+    Data2: 1121601457
+    Data3: 1247915159
+    Data4: -559744580
   Banks:
   - {fileID: -5216281237176928461}
   IsStream: 0
@@ -154,7 +127,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2804
+  Length: 3107
 --- !u!114 &-5776020478729949929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +170,7 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638381954217922979
+  lastModified: 638382438138916285
   FileSizes: []
   Exists: 1
 --- !u!114 &-2367666568125111702
@@ -260,13 +233,12 @@ MonoBehaviour:
   - {fileID: -5801201233232090784}
   - {fileID: 8491540938298107189}
   - {fileID: 3400756544907103941}
-  - {fileID: -7134581343749057082}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5216281237176928461}
   StringsBanks:
   - {fileID: 5617706128196114280}
-  cacheTime: 638381954217972946
+  cacheTime: 638382438138971343
   cacheVersion: 131609
 --- !u!114 &44435955544004182
 MonoBehaviour:
@@ -417,10 +389,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/VO_02
   Guid:
-    Data1: -607066726
-    Data2: 1259043702
-    Data3: 1881202099
-    Data4: -960605261
+    Data1: 79342663
+    Data2: 1121965548
+    Data3: 1706581665
+    Data4: 1746070930
   Banks:
   - {fileID: -5216281237176928461}
   IsStream: 0
@@ -429,7 +401,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3138
+  Length: 2804
 --- !u!114 &4587286305606388617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,10 +471,10 @@ MonoBehaviour:
   Path: Assets/FMOD_Banks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638381954217972946
+  lastModified: 638382438138971343
   FileSizes:
   - Name: 
-    Value: 1606
+    Value: 1574
   Exists: 1
 --- !u!114 &6284003224896283988
 MonoBehaviour:
