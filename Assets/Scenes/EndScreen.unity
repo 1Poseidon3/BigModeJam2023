@@ -180,6 +180,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2121b416c9ef2bf44aa5ddeae5c17921, type: 3}
+--- !u!95 &423113776 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9002410161632294401, guid: 2121b416c9ef2bf44aa5ddeae5c17921, type: 3}
+  m_PrefabInstance: {fileID: 423113775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &731579227
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,8 +481,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerLabel: {fileID: 1338088713}
-  ratingLabel: {fileID: 0}
-  transition: {fileID: 0}
+  ratingLabel: {fileID: 827359930}
+  transition: {fileID: 423113776}
   timeToTransitionToMainMenu: 15
 --- !u!4 &834676274
 Transform:
